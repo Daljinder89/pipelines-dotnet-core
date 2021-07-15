@@ -6,7 +6,7 @@
 trigger: none
 
 schedules:
-- cron: "*/2 * * * *"
+- cron: "0 0 * * *"
   displayName: Every two minutes build
   branches:
     include:
