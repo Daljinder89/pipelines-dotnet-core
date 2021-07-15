@@ -5,13 +5,12 @@
 
 trigger: none
 
-schedules:
-- cron: "0 0 * * *"
-  displayName: Every two minutes build
-  branches:
-    include:
-    - master
-  always: true
+resources:
+  pipelines:
+    - pipeline: Multistage
+      source: 'Daljinder89.pipelines-java'
+      trigger: true
+
 
 
 pool:
